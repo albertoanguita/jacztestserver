@@ -29,12 +29,12 @@ public class PeerServerActionImpl implements PeerServerAction {
 
     @Override
     public void clientConnected(ConnectedClientData connectedClientData) {
-        System.out.println("Client connected");
+        System.out.println("Client connected: " + connectedClientData.getPeerID());
     }
 
     @Override
     public void clientDisconnected(ConnectedClientData connectedClientData) {
-        System.out.println("Client disconnected");
+        System.out.println("Client disconnected: " + connectedClientData.getPeerID());
     }
 
     @Override
